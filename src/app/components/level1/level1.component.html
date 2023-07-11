@@ -1,0 +1,20 @@
+{{cdCheck()}}
+<a>
+  LEVEL 1
+  <button (click)="changeInput()">Change Input for level2-clone</button>
+  <button (click)="changeStreamValue()">Trigger service stream</button>
+
+  <div class="mouse" (mouseenter)="({})">mouseenter zone</div>
+  <div class="mouse" (mousemove)="({})">mousemove zone</div>
+</a>
+<ul>
+  <li>
+    <app-level2></app-level2>
+  </li>
+  <li>
+    <app-level2-clone [input1]="inputForClone"></app-level2-clone>
+  </li>
+</ul>
+
+
+

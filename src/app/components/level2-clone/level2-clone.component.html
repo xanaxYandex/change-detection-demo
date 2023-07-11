@@ -1,0 +1,17 @@
+{{cdCheck()}}
+<a>
+  LEVEL 2 OnPush
+  <span>Async pipe value: {{stream$ | async}}</span>
+  <span>Input value: {{input1}}</span>
+  <button (click)="({})">Trigger any component's DOM event</button>
+  <button (click)="detectChanges()">Manually detect changes</button>
+  <button (click)="markForCheck()">Mark component for check</button>
+</a>
+<ul>
+  <li>
+    <app-level3></app-level3>
+  </li>
+  <li>
+    <app-level3></app-level3>
+  </li>
+</ul>
